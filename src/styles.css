@@ -1,0 +1,207 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #c0e4fc, #d3f4f9);
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1 {
+    margin: 50px 0;
+    font-size: 3rem;
+    text-align: center;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+}
+
+/* Container Styling */
+.container {
+    max-width: 720px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.6s ease-out;
+}
+
+/* Ticket List Styling */
+.ticket-list {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f7f9fc;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ticket-item {
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #e0e4e8;
+    border-radius: 8px;
+    background-color: #f1f8fe;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Priority Dot Styling */
+.priority-dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.priority-low {
+    background-color: #76c7c0;
+}
+
+.priority-medium {
+    background-color: #f39c12;
+}
+
+.priority-high {
+    background-color: #e74c3c;
+}
+
+/* Button Styles */
+.button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+.button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Input and Textarea Styles */
+textarea,
+.select,
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea {
+    min-height: 180px;
+}
+
+textarea:focus,
+.select:focus,
+.form-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Results Section */
+.results {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Form Fields */
+.priority-fieldset {
+    border: 1px solid #b8c2cc;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f4f7f9;
+}
+
+.priority-label {
+    margin-right: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.priority-input {
+    margin-right: 5px;
+    transform: scale(1.2);
+}
+
+/* Select Box */
+select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e1e6e8;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
